@@ -13,6 +13,12 @@ jobs:
       with:
         lfs: true
 
+    - name: bust old image
+      uses: smartsquaregmbh/delete-old-packages@v0.3.0
+      with:
+        names: |
+          lfs-binder
+
     - name: update jupyter dependencies with repo2docker
       uses: jupyterhub/repo2docker-action@master
       with:
