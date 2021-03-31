@@ -17,6 +17,8 @@ jobs:
       uses: WyriHaximus/github-action-delete-package@1.0.0
       with:
         packageVersionId: latest
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: update jupyter dependencies with repo2docker
       uses: jupyterhub/repo2docker-action@master
