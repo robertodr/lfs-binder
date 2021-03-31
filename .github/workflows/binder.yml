@@ -14,7 +14,7 @@ jobs:
         lfs: true
 
     - name: bust old image
-      uses: WyriHaximus/github-action-delete-package@1.0
+      uses: WyriHaximus/github-action-delete-package@1.0.0
       with:
         packageVersionId: latest
 
